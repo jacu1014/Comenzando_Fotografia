@@ -1,0 +1,6 @@
+@font-face {
+  src: url(../fuentes/Anton-Regular.ttf);
+}
+h1{
+  font-family: 'Anton';
+}
