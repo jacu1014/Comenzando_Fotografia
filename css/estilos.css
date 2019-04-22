@@ -1,6 +1,14 @@
 @font-face {
   src: url(../fuentes/Anton-Regular.ttf);
+  src: url(../fuentes/YanoneKaffeesatz-Bold.ttf);
+  src: url(../fuentes/Play-Regular.ttf);
 }
 h1{
   font-family: 'Anton';
+}
+p{
+  font-family: 'Yanone Kaffeesatz';
+}
+nav{
+  font-family: 'Play';
 }
