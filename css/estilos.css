@@ -5,75 +5,66 @@
 }
 body{
   background: #02010a;
-}
-header{
-  background: #5b7989;
   color: white;
-  text-shadow: 2px 2px 2px #02010a;
-  border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  width: 100%;
-  margin: 0;
 }
-footer{
-  background: #C6d5c5;
-}
-
-
 h1{
   font-family: 'Anton';
-}
-h2{
-  font-family: 'Anton';
+  padding: 10px;
 }
 p{
   font-family: 'Yanone Kaffeesatz';
 }
-nav a{
+h1 nav{
   font-family: 'Play';
-  color: white;
-  font-size: 1.5em;
-}
-nav a:visited, nav a:active{
-  text-decoration: none;
-}
-.central{
+  font-size: 0.8em;
   text-align: center;
-  vertical-align: middle;
-  background-color:#82c3a6;
-
-
-}
-#central{
-  background-color:#82c3a6;
-  text-align: center;
-  vertical-align: middle;
-  margin: 0px;
-  width: 60%;
+  vertical-align: center;
   padding: 20px;
 }
-@media (min-width:900px) {
-  #contenido{
-    text-align: center;
-    max-width: 900px;
+
+@media (min-width:900px){
+  .contenido{
+    width: 900px;
+    margin: auto;
   }
-  h2{
-    text-align: center;
+  header{
+    background: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+  }
+  nav{
+    float: right;
   }
   nav a{
-    
+    color: white;
   }
+  nav a:focus, nav a:active {
+    text-decoration: none;
+  }
+  #central{
+    text-align: center;
+  }
+  .imagenes{
+    box-shadow: 2px 2px 2px #02010a;
+  }
+
 }
 @media (max-width:899px){
-  #contenido{
-    text-align: center;
-    width: 100%;
+  .contenido{
+    max-width: 900px;
+    margin: auto;
   }
-  h2{
-    text-align: center;
+  header{
+    background: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
   }
-  nav a{
-    float: none;
+  nav{
+    float: right;
+  }
+  nav h1{
+    float: left;
+  }
+  #central{
+    text-align: center;
   }
 }
