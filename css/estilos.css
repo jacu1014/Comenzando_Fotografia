@@ -9,7 +9,7 @@ body{
 }
 h1{
   font-family: 'Anton';
-  padding: 10px;
+  padding: 50px;
   text-shadow: 2px 2px 2px #02010a;
 }
 p{
@@ -18,8 +18,6 @@ p{
 h1 nav{
   font-family: 'Play';
   font-size: 0.8em;
-  text-align: center;
-  vertical-align: center;
   padding: 20px;
 }
 
@@ -51,19 +49,28 @@ h1 nav{
     padding: 30px;
   }
   #retrato{
+    border: 4px solid black;
     margin-left: auto;
-    padding: 20px;
     width: 45%;
   }
   #paisaje{
+    border: 4px solid black;
     margin-right: auto;
-    padding: 20px;
     width: 45%;
+    
   }
   .secundarias{
-
     background:  #d5c75f;
-    flex-direction: column;
+    flex-direction: column wrap;
+    padding: 20px;vcza
+    }
+  #paisaje:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+  #retrato:hover{
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px 2px #82c3a6;
   }
 }
 @media (max-width:899px){
@@ -84,7 +91,15 @@ h1 nav{
   nav a:focus, nav a:active {
     text-decoration: none;
   }
+  h1{
+    font-size: 1.8em;
+  }
+  h1 nav{
+    font-size: 0.6em;
+  }
   .encabezado{
+    margin: 0;
+    padding: 0;
     background: #82c3a6;
   }
   #central{
@@ -93,4 +108,19 @@ h1 nav{
     width: 60%;
     padding: 30px;
   }
+  .secundarias{
+    background:  #d5c75f;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #retrato{
+    padding: 20px;
+    width: 90%;
+  }
+  #paisaje{
+    padding: 20px;
+    width: 90%;
+  }
+
 }
