@@ -23,6 +23,18 @@ h1 nav{
 }
 footer{
   background: #C6d5c5;
+  display: inline-block;
+  column-width: auto;
+  padding: 20px;
+  column-rule: 2px solid red;
+
+}
+svg{
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
 }
 
 @media (min-width:900px){
@@ -81,33 +93,34 @@ footer{
     -o-column-count: 4;
     -webkit-column-count: 4;
     display: flex;
-    column-width: 225px;
+    text-align: justify;
+
   }
   .contacto{
 
-border: 4px solid red;
+
   }
   .terminos{
 
-border: 4px solid red;
+
   }
   .redes{
-border: 4px solid red;
+column-width: 10%;
 
   }
   .derechos{
 
-border: 4px solid red;
+
   }
   .logos{
-
 
   }
   .icon{
 
   }
   .nombres{
-
+text-align: center;
+vertical-align: middle;
   }
 }
 @media (max-width:899px){
