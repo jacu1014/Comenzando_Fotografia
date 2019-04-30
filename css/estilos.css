@@ -3,12 +3,250 @@
   src: url(../fuentes/YanoneKaffeesatz-Bold.ttf);
   src: url(../fuentes/Play-Regular.ttf);
 }
+body{
+  background: #02010a;
+  color: white;
+}
 h1{
   font-family: 'Anton';
+  text-shadow: 2px 2px 2px #02010a;
 }
 p{
   font-family: 'Yanone Kaffeesatz';
 }
 nav{
   font-family: 'Play';
+  font-size: 1.3em;
+}
+footer{
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+@media (min-width:900px){
+  .contenido{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header{
+    background: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav a{
+    color: white;
+  }
+  nav a:focus, nav a:active {
+    text-decoration: none;
+  }
+  .encabezado{
+    background: #82c3a6;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  #central{
+    width: 50%;
+
+  }
+  .secundarias{
+    background:  #d5c75f;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .secundarias img{
+    width: 47%;
+    border: 1px solid black
+  }
+  .secundarias p{
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+  #paisaje:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+  #retrato:hover{
+    box-shadow: 2px 2px 2px #82c3a6;
+    transform: translate(5px, -20px);
+  }
+  .pie{
+    background: #C6d5c5;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  #redes{
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  #derechos{
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+@media (max-width:899px){
+  .contenido{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header{
+    background: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav a{
+    color: white;
+  }
+  nav a:focus, nav a:active {
+    text-decoration: none;
+  }
+  .encabezado{
+    background: #82c3a6;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  #central{
+    width: 50%;
+
+  }
+  .secundarias{
+    background:  #d5c75f;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .secundarias img{
+    width: 47%;
+    border: 1px solid black
+  }
+  .secundarias p{
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+  #paisaje{
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
+  #retrato{
+    -webkit-order: 3;
+    -ms-order: 3;
+    order: 3;
+  }
+  #titpaisaje{
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+  }
+  #titretrato{
+    -webkit-order: 4;
+    -ms-order: 4;
+    order: 4;
+  }
+  #paisaje:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+  #retrato:hover{
+    box-shadow: 2px 2px 2px #82c3a6;
+    transform: translate(5px, -20px);
+  }
+  .galeria{
+    background: #d5c75f;
+  }
+
+  .pie{
+    background: #C6d5c5;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+  }
+  #redes{
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    order: 3;
+  }
+  #derechos{
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    order: 4;
+  }
+  #terminos{
+    order: 2;
+
+  }
+  #contacto{
+    order: 1;
+  }
 }

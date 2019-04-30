@@ -1,63 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
+  <meta name="viewport" content="width:device-width. user-scalable=no">
+  <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Anton|Play|Yanone+Kaffeesatz" rel="stylesheet">
   <link rel="stylesheet" href="../css/estilos.css">
-  <meta charset="utf-8">
   <title>Comenzando con la Fotografia</title>
 </head>
 <body>
-  <header>
-    <h1>Comenzando con la Fotografia</h1>
-    <h2>Retratos</h2>
-    <nav>
-      <a href="../index.html">Inicio</a>
-      <a href="paisajes.html">Paisajes</a>
-      <a href="#">Retratos</a>
-    </nav>
-  </header>
-  <section>
-    <img src="../imagenes/fotografia.jpg" alt="Imagen Central">
-    <section>
-      <section>
-        <img id="retrato1" src="../imagenes/retratos.jpg" alt="paisaje">
-        <img id="retrato2" src="../imagenes/retratos.jpg" alt="paisaje">
-        <img id="retrato3" src="../imagenes/retratos.jpg" alt="paisaje">
-        <img id="retrato4" src="../imagenes/retratos.jpg" alt="paisaje">
-        <img id="retrato5" src="../imagenes/retratos.jpg" alt="paisaje">
-        <img id="retrato6" src="../imagenes/retratos.jpg" alt="paisaje">
-
-      </section>
-      <footer>
-        <section id="contacto">
-          <h3>Contacto</h3>
-          <p>jacu1014@gmail.com</p>
-          <p>Dir. Cra 92 # 73a 32</p>
-          <p>Tel. 3138675042</p>
-        </section>
-        <section id="terminos">
-          <h3>Terminos</h3>
-          <p>La utilización del sitio implica su aceptación plena.</p>
-        </section>
-        <section id="redes">
-          <h3>Redes Sociales</h3>
-          <p><svg>
-            <image id="facebook" name="Facebook" xlink:href="../imagenes/facebook.svg" ></image>
-          </svg>Facebook</p>
-          <p><svg>
-            <image id="instagram" name="Instagram" xlink:href="../imagenes/instagram.svg" ></image>
-          </svg>Instagram</p>
-          <p><svg>
-            <image id="linkedin"  name="Linkedin" xlink:href="../imagenes/linkedin.svg" ></image>
-          </svg>Linkedin</p>
-        </section>
-        <section id="derechos">
-          <h3>Derechos</h3>
-          <p>Alejandro Ceballos</p>
-          <p><svg>
-            <image id="Copyright" name="Copyright" xlink:href="../imagenes/copyright-symbol.svg" ></image>
-          </svg>2019</p>
-        </section>
-      </footer>
-      <script src="http://localhost:51483/livereload.js" charset="utf-8"></script>
-    </body>
-    </html>
+  <div class="contenido">
+    <header>
+      <h1>Comenzando con la Fotografía</h1>
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="paisajes.html">Paisajes</a>
+        <a href="#">Retratos</a>
+      </nav>
+    </header>
+    <div class="encabezado">
+      <img id="central" src="../imagenes/fotografia.jpg" alt="Imagen Central">
+    </div>
+    <div class="galeria">
+      <img id="retrato1" src="../imagenes/retratos.jpg" alt="retrato">
+      <img id="retrato2" src="../imagenes/retratos.jpg" alt="retrato">
+      <img id="retrato3" src="../imagenes/retratos.jpg" alt="retrato">
+      <img id="retrato4" src="../imagenes/retratos.jpg" alt="retrato">
+      <img id="retrato5" src="../imagenes/retratos.jpg" alt="retrato">
+      <img id="retrato6" src="../imagenes/retratos.jpg" alt="retrato">
+    </div>
+    <footer class="pie">
+      <div id="contacto">
+        <h3>Contacto</h3>
+        <p>jacu1014@gmail.com</p>
+        <p>Dir. Cra 92 # 73a 32</p>
+        <p>Tel. 3138675042</p>
+      </div>
+      <div id="terminos">
+        <h3>Terminos</h3>
+        <p>La utilización del sitio implica su aceptación plena.</p>
+      </div>
+      <div id="redes">
+        <h3>Redes Sociales</h3>
+        <div class="">
+          <p>Facebook<svg class="logos" viewbox="0 0 150 150">
+            <image class="icon" id="facebook" name="Facebook" xlink:href="../imagenes/facebook.svg" ></image>
+          </svg></p>
+        </div>
+        <div class="">
+          <p>Instagram<svg class="logos" viewbox="0 0 150 150">
+            <image class="icon" id="instagram" name="Instagram" xlink:href="../imagenes/instagram.svg" ></image>
+          </svg></p>
+        </div>
+        <div class="">
+          <p>Linkedin<svg class="logos" viewbox="0 0 150 150">
+            <image class="icon" id="linkedin"  name="Linkedin" xlink:href="../imagenes/linkedin.svg" ></image>
+          </svg></p>
+        </div>
+      </div>
+      <div id="derechos">
+        <h3>Derechos</h3>
+        <p>Alejandro Ceballos</p>
+        <div class="">
+          <p>2019<svg class="logos" viewbox="0 0 150 150">
+            <image class="icon" id="Copyright" name="Copyright" xlink:href="../imagenes/copyright.svg" x=0 y=0></image>
+          </svg></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+</body>
+</html>
