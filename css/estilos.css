@@ -79,7 +79,7 @@ img{
 
   .secundarias img{
     width: 47%;
-    border: 1px solid black
+    border: 1px solid black;
   }
   .secundarias p{
     font-size: 1.5em;
@@ -93,7 +93,32 @@ img{
     box-shadow: 2px 2px 2px #82c3a6;
     transform: translate(5px, -20px);
   }
-  .pie{
+  .galeria{
+    background:  #d5c75f;
+    display: flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+  .galeria img{
+    margin: 10px;
+    width: 30%;
+    }
+    #paisaje1, #retrato1{
+      filter: blur(10px);
+    }
+    #paisaje2, #paisaje4, #paisaje6,#retrato2, #retrato4, #retrato6 {
+      filter: grayscale(100%);
+    }
+    #paisaje3, #retrato3{
+      filter: sepia(90%);
+    }
+
+      .pie{
     background: #C6d5c5;
     display: flex;
     display:-webkit-flex;
